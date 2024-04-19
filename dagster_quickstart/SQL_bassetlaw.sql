@@ -7,8 +7,8 @@ SELECT
   p.*,  -- Select all columns from the planning applications
   d.geom  -- Include the geographic data from the delivery point table
 FROM
-  `dummy_datasets.bassetlaw_planning_applications` p
+  `searchland-playground.dummy_datasets.bassetlaw_planning_applications` p
 LEFT JOIN
-  `dummy_datasets.bassetlaw_deliverypoint` d
+  `searchland-playground.dummy_datasets.bassetlaw_deliverypoint` d
 ON
   p.address = d.address  -- Join condition based on matching addresses
